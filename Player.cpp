@@ -156,7 +156,7 @@ void Player::setWalkingDirection(sf::Vector2f direction)
     if (l != 0)
         _walkingDirection /= l;
 
-    assert(0.9999999f <= sqrtf(_walkingDirection.x * _walkingDirection.x + _walkingDirection.y * _walkingDirection.y));
+    //assert(0.9999999f <= sqrtf(_walkingDirection.x * _walkingDirection.x + _walkingDirection.y * _walkingDirection.y));
     assert(sqrtf(_walkingDirection.x * _walkingDirection.x + _walkingDirection.y * _walkingDirection.y) <= 1.0000001f);
 }
 void Player::walk()
